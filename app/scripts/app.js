@@ -1,3 +1,24 @@
-// defines the angular.module for this app
-angular.module('blocJams', []);
-/* The first argument passed, blocJams, is the prescribed name of the module. The empty array, passed as the second argument, injects dependencies into an application. For now, there are no dependencies to inject.*/
+(function()) {
+    function config($stateProvider, $locationProvider) {
+        
+        $locationProvider
+            .html5Mode({
+                enabled: true,
+                requireBase: false
+            });
+}
+        $stateProvider
+            .state('landing', {
+            url: '/',
+            templateUrl: '/templates/landing.html'
+            });
+
+            .state('album', {
+            url: '/album',
+            templateUrl: '/templates/album.html' 
+            });
+
+    angulari
+        .module('blocJams', ['ui.router'])
+        .config(config);
+})();
