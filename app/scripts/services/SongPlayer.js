@@ -91,6 +91,13 @@
         SongPlayer.volume = null;
 
         /**
+        * @desc Global attribute to use in timecode filter
+        * @type {buzz object}
+        */
+        SongPlayer.playingBuzzObject = currentBuzzObject;
+
+
+        /**
         * @function setVolume
         * @desc Set the current volume playing
         * @param {Number} volume directive value
