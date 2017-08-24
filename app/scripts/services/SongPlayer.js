@@ -84,6 +84,21 @@
         */
         SongPlayer.currentTime = null;
 
+        /**
+        * @desc Attribute to hold the volume value
+        * @type {Number}
+        */
+        SongPlayer.volume = null;
+
+        /**
+        * @function setVolume
+        * @desc Set the current volume playing
+        * @param {Number} volume directive value
+        */
+        SongPlayer.setVolume = function(value){
+            currentBuzzObject.setVolume(value);
+        };
+
 
         /**
         * @function setCurrentTime
